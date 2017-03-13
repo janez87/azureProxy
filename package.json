@@ -1,0 +1,26 @@
+{
+  "name": "azure-proxy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "dependencies": {
+    "azure-storage": "^1.4.0",
+    "bluebird": "^3.4.7",
+    "body-parser": "^1.17.1",
+    "express": "^4.15.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/janez87/azureProxy.git"
+  },
+  "author": "Andrea Mauri",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/janez87/azureProxy/issues"
+  },
+  "homepage": "https://github.com/janez87/azureProxy#readme"
+}
