@@ -9,7 +9,7 @@ app.use(bodyParser.json())
 app.get('/', function (req, res) {
 
   proxy.getStatistics((error,result)=>{
-    res.json(error || JSON.parse(result))
+    res.send(error || result)
   })
 
 })
