@@ -4,20 +4,22 @@ const proxy = require('./lib/proxy.js')
 
 let app = express()
 
-app.use(bodyParser.json())
+app.use(bodyParser.text())
 
 app.get('/', function (req, res) {
 
-  proxy.getStatistics((error,result)=>{
-    res.send(error || result)
+  var name = req.query.name;
+  console.log(name)
+  proxy.getStatistics(name,(error, result) => {
+    res.send(error || result);
   })
 
 })
 
 app.post('/', function (req, res) {
-  
-  proxy.sendData(req.body,(err,result)=>{
-    res.send(err || result)
+
+  proxy.sendData(req.body, (err, result) => {
+    res.send(err || result);
   })
 
 })
